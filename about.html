@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruz Cars | About Us</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="text-dark">
+
+  <!-- ================= HEADER ================= -->
+  <header class="bg-dark sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="flex items-center gap-2">
+        <!-- 🖼️ REPLACE LOGO -->
+        <span class="w-10 h-10 rounded-full bg-brand flex items-center justify-center text-dark">
+          <i class="fa-solid fa-car"></i>
+        </span>
+        <span class="text-white font-bold text-xl">bruz.</span>
+      </a>
+
+      <nav class="hidden md:flex gap-8 text-white font-semibold">
+        <a href="index.html" class="hover:text-brand">Home</a>
+        <a href="offering.html" class="hover:text-brand">Our Offering</a>
+        <a href="about.html" class="text-brand">About Us</a>
+      </nav>
+
+      <a href="contact.html" class="btn hidden md:inline-block">Contact Us</a>
+
+      <!-- Mobile menu: <details> opens/closes by itself, no JavaScript -->
+      <details class="md:hidden">
+        <summary class="text-white text-2xl" aria-label="Open menu"><i class="fa-solid fa-bars"></i></summary>
+        <div class="absolute left-0 right-0 top-full bg-dark text-white font-semibold px-4 pb-4 flex flex-col gap-3">
+          <a href="index.html">Home</a>
+          <a href="offering.html">Our Offering</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html" class="btn text-center">Contact Us</a>
+        </div>
+      </details>
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="relative h-48 md:h-64 flex items-end">
+      <!-- 🖼️ REPLACE IMAGE: banner (night city taxi) -->
+      <img src="https://picsum.photos/seed/bruz-about-banner/1600/500" alt="About us banner"
+           class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <h1 class="relative text-white text-2xl md:text-3xl font-bold px-4 pb-4 max-w-6xl mx-auto w-full">About Us</h1>
+    </section>
+
+    <!-- ================= OUR TEAM ================= -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Our Team</h2>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+
+        <div class="rounded-lg overflow-hidden shadow">
+          <!-- 🖼️ REPLACE IMAGE: Alex Gibson -->
+          <img src="https://picsum.photos/seed/bruz-team1/400/500" alt="Alex Gibson" class="w-full h-56 md:h-72 object-cover">
+          <div class="p-3">
+            <h3 class="font-semibold">Alex Gibson</h3>
+            <p class="text-sm">Founder</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden shadow">
+          <!-- 🖼️ REPLACE IMAGE: Sarah Johnson -->
+          <img src="https://picsum.photos/seed/bruz-team2/400/500" alt="Sarah Johnson" class="w-full h-56 md:h-72 object-cover">
+          <div class="p-3">
+            <h3 class="font-semibold">Sarah Johnson</h3>
+            <p class="text-sm">Designer</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden shadow">
+          <!-- 🖼️ REPLACE IMAGE: Mark Davis -->
+          <img src="https://picsum.photos/seed/bruz-team3/400/500" alt="Mark Davis" class="w-full h-56 md:h-72 object-cover">
+          <div class="p-3">
+            <h3 class="font-semibold">Mark Davis</h3>
+            <p class="text-sm">Developer</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden shadow">
+          <!-- 🖼️ REPLACE IMAGE: Emily Thompson -->
+          <img src="https://picsum.photos/seed/bruz-team4/400/500" alt="Emily Thompson" class="w-full h-56 md:h-72 object-cover">
+          <div class="p-3">
+            <h3 class="font-semibold">Emily Thompson</h3>
+            <p class="text-sm">Product Manager</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= OUR VISION (image left) ================= -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- 🖼️ REPLACE IMAGE: yellow taxi by the sea -->
+        <img src="https://picsum.photos/seed/bruz-vision/800/600" alt="Our vision"
+             class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
+
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-center">Our Vision</h2>
+          <p class="text-sm leading-relaxed mt-4 text-justify">
+            At Bruz Cars, we envision a world where transportation is not only accessible but also contributes
+            positively to society. By fostering sustainable practices and community development, we strive to be
+            more than just a service provider — we aim to be a trusted partner in your everyday journeys.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OUR COMMITMENT (image right) ================= -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- Text first on desktop, image first on mobile -->
+        <div class="order-2 md:order-1">
+          <h2 class="text-2xl md:text-3xl font-bold text-center">Our Commitment</h2>
+          <p class="text-sm leading-relaxed mt-4 text-justify">
+            We are committed to the highest standards of safety and ethics. Our drivers undergo rigorous vetting,
+            ensuring that every ride is not just comfortable but secure. Through partnerships with businesses and
+            communities, we create opportunities that drive economic growth and social equity.
+          </p>
+        </div>
+
+        <!-- 🖼️ REPLACE IMAGE: yellow taxis in traffic -->
+        <img src="https://picsum.photos/seed/bruz-commitment/800/600" alt="Our commitment"
+             class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg order-1 md:order-2">
+      </div>
+    </section>
+
+    <!-- ================= OUR IMPACT (image left) ================= -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- 🖼️ REPLACE IMAGE: taxi in Times Square -->
+        <img src="https://picsum.photos/seed/bruz-impact/800/600" alt="Our impact"
+             class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
+
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-center">Our Impact</h2>
+          <p class="text-sm leading-relaxed mt-4 text-justify">
+            Since our inception, Bruz Cars has empowered hundreds of drivers and served thousands of satisfied
+            customers. By prioritizing ethical practices and innovative solutions, we continue to make a lasting
+            impact in the transportation industry and beyond
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-dark text-white">
+    <div class="max-w-6xl mx-auto px-4 py-10 text-center">
+      <!-- 🖼️ REPLACE LOGO -->
+      <span class="w-14 h-14 rounded-full bg-brand flex items-center justify-center text-dark text-2xl mx-auto">
+        <i class="fa-solid fa-car"></i>
+      </span>
+
+      <ul class="flex flex-wrap justify-center gap-x-5 gap-y-2 mt-6 font-semibold text-sm">
+        <li><a href="#">Link One</a></li>
+        <li><a href="#">Link Two</a></li>
+        <li><a href="#">Link Three</a></li>
+        <li><a href="#">Link Four</a></li>
+        <li><a href="#">Link Five</a></li>
+      </ul>
+
+      <hr class="border-gray-600 my-6">
+
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+        <p>© 2024 Bruz. All rights reserved</p>
+        <ul class="flex gap-4 text-xs underline">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookies Settings</a></li>
+        </ul>
+        <div class="flex gap-4 text-lg">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

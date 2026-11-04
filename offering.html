@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruz Cars | Our Offering</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="text-dark">
+
+  <!-- ================= HEADER ================= -->
+  <header class="bg-dark sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="flex items-center gap-2">
+        <!-- 🖼️ REPLACE LOGO -->
+        <span class="w-10 h-10 rounded-full bg-brand flex items-center justify-center text-dark">
+          <i class="fa-solid fa-car"></i>
+        </span>
+        <span class="text-white font-bold text-xl">bruz.</span>
+      </a>
+
+      <nav class="hidden md:flex gap-8 text-white font-semibold">
+        <a href="index.html" class="hover:text-brand">Home</a>
+        <a href="offering.html" class="text-brand">Our Offering</a>
+        <a href="about.html" class="hover:text-brand">About Us</a>
+      </nav>
+
+      <a href="contact.html" class="btn hidden md:inline-block">Contact Us</a>
+
+      <!-- Mobile menu: <details> opens/closes by itself, no JavaScript -->
+      <details class="md:hidden">
+        <summary class="text-white text-2xl" aria-label="Open menu"><i class="fa-solid fa-bars"></i></summary>
+        <div class="absolute left-0 right-0 top-full bg-dark text-white font-semibold px-4 pb-4 flex flex-col gap-3">
+          <a href="index.html">Home</a>
+          <a href="offering.html">Our Offering</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html" class="btn text-center">Contact Us</a>
+        </div>
+      </details>
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="relative h-48 md:h-64 flex items-end">
+      <!-- 🖼️ REPLACE IMAGE: banner (yellow taxi + police cars) -->
+      <img src="https://picsum.photos/seed/bruz-offer-banner/1600/500" alt="Our offering banner"
+           class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <h1 class="relative text-white text-2xl md:text-3xl font-bold px-4 pb-4 max-w-6xl mx-auto w-full">Our Offering</h1>
+    </section>
+
+    <!-- ================= BOOK A RIDE (image left) ================= -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- 🖼️ REPLACE IMAGE: hand holding phone at the airport -->
+        <img src="https://picsum.photos/seed/bruz-ride-big/800/600" alt="Book a ride"
+             class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
+
+        <div class="md:text-center">
+          <h2 class="text-2xl md:text-3xl font-bold">Book a Ride</h2>
+          <p class="text-lg mt-2">Safe and trusted transportation, anytime, anywhere</p>
+          <div class="mt-4 text-left inline-block">
+            <h3 class="font-semibold">Features :</h3>
+            <ul class="list-disc list-inside text-sm mt-1 space-y-1">
+              <li>Quick booking via our app.</li>
+              <li>24/7 availability.</li>
+              <li>Affordable and transparent pricing.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BOOK A DELIVERY (image right) ================= -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- On desktop the text comes first, on mobile the image comes first -->
+        <div class="md:text-center order-2 md:order-1">
+          <h2 class="text-2xl md:text-3xl font-bold">Book A Delivery</h2>
+          <p class="text-lg mt-2">Reliable Delivery Solutions</p>
+          <div class="mt-4 text-left inline-block">
+            <h3 class="font-semibold">Features :</h3>
+            <ul class="list-disc list-inside text-sm mt-1 space-y-1">
+              <li>Fast and reliable deliveries.</li>
+              <li>Track your delivery in real-time.</li>
+              <li>Flexible same-day or scheduled options.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 🖼️ REPLACE IMAGE: delivery van with phone -->
+        <img src="https://picsum.photos/seed/bruz-delivery-big/800/600" alt="Book a delivery"
+             class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg order-1 md:order-2">
+      </div>
+    </section>
+
+    <!-- ================= HIRE A CAR (image left) ================= -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- 🖼️ REPLACE IMAGE: hand holding phone in front of a BMW -->
+        <img src="https://picsum.photos/seed/bruz-hire-big/800/600" alt="Hire a car"
+             class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
+
+        <div class="md:text-center">
+          <h2 class="text-2xl md:text-3xl font-bold">Hire A Car</h2>
+          <p class="text-lg mt-2">Flexible Car Hire Options</p>
+          <div class="mt-4 text-left inline-block">
+            <h3 class="font-semibold">Features :</h3>
+            <ul class="list-disc list-inside text-sm mt-1 space-y-1">
+              <li>Variety of vehicles.</li>
+              <li>Seamless online booking.</li>
+              <li>No hidden fees.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WE DO OUR BEST ================= -->
+    <section class="relative py-12 px-4">
+      <!-- 🖼️ REPLACE IMAGE: bridge / taxi background -->
+      <img src="https://picsum.photos/seed/bruz-best-bg/1600/700" alt="Background"
+           class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/70"></div>
+
+      <div class="relative max-w-4xl mx-auto">
+        <h2 class="text-white text-2xl md:text-3xl font-bold text-center mb-8">We Do Our Best</h2>
+
+        <div class="grid sm:grid-cols-2 gap-6 text-white">
+
+          <div class="flex gap-4">
+            <span class="shrink-0 w-12 h-12 rounded-full bg-brand text-dark flex items-center justify-center text-xl">
+              <i class="fa-solid fa-car"></i>
+            </span>
+            <div>
+              <h3 class="text-brand font-semibold text-sm">HOME PICKUP</h3>
+              <p class="text-xs mt-1">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <span class="shrink-0 w-12 h-12 rounded-full bg-brand text-dark flex items-center justify-center text-xl">
+              <i class="fa-solid fa-bolt"></i>
+            </span>
+            <div>
+              <h3 class="text-brand font-semibold text-sm">FAST BOOKING</h3>
+              <p class="text-xs mt-1">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <span class="shrink-0 w-12 h-12 rounded-full bg-brand text-dark flex items-center justify-center text-xl">
+              <i class="fa-solid fa-car"></i>
+            </span>
+            <div>
+              <h3 class="text-brand font-semibold text-sm">HOME PICKUP</h3>
+              <p class="text-xs mt-1">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <span class="shrink-0 w-12 h-12 rounded-full bg-brand text-dark flex items-center justify-center text-xl">
+              <i class="fa-solid fa-bolt"></i>
+            </span>
+            <div>
+              <h3 class="text-brand font-semibold text-sm">FAST BOOKING</h3>
+              <p class="text-xs mt-1">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= APP DOWNLOAD (CTA) ================= -->
+    <section class="bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold">Safe and Reliable Transportation Made Simple</h2>
+          <p class="text-sm mt-3 text-gray-600">
+            Join Bruz Cars today and experience convenience like never before. Your trusted partner for rides,
+            deliveries, and car hire.
+          </p>
+          <div class="flex gap-3 mt-6">
+            <a href="#" class="bg-dark text-white text-xs rounded-md px-3 py-2 flex items-center gap-2">
+              <i class="fa-brands fa-apple text-xl"></i> App Store
+            </a>
+            <a href="#" class="bg-dark text-white text-xs rounded-md px-3 py-2 flex items-center gap-2">
+              <i class="fa-brands fa-google-play text-lg"></i> Google Play
+            </a>
+          </div>
+        </div>
+
+        <!-- 🖼️ REPLACE IMAGE: phone with the bruz logo -->
+        <img src="https://picsum.photos/seed/bruz-phone/400/500" alt="Bruz app on a phone"
+             class="w-56 md:w-64 mx-auto rounded-3xl">
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-dark text-white">
+    <div class="max-w-6xl mx-auto px-4 py-10 text-center">
+      <!-- 🖼️ REPLACE LOGO -->
+      <span class="w-14 h-14 rounded-full bg-brand flex items-center justify-center text-dark text-2xl mx-auto">
+        <i class="fa-solid fa-car"></i>
+      </span>
+
+      <ul class="flex flex-wrap justify-center gap-x-5 gap-y-2 mt-6 font-semibold text-sm">
+        <li><a href="#">Link One</a></li>
+        <li><a href="#">Link Two</a></li>
+        <li><a href="#">Link Three</a></li>
+        <li><a href="#">Link Four</a></li>
+        <li><a href="#">Link Five</a></li>
+      </ul>
+
+      <hr class="border-gray-600 my-6">
+
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+        <p>© 2024 Bruz. All rights reserved</p>
+        <ul class="flex gap-4 text-xs underline">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookies Settings</a></li>
+        </ul>
+        <div class="flex gap-4 text-lg">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruz Cars | Home</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+  <!-- Our small custom css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="text-dark">
+
+  <!-- ================= HEADER ================= -->
+  <header class="bg-dark sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2">
+        <!-- 🖼️ REPLACE LOGO: put your real logo image here -->
+        <span class="w-10 h-10 rounded-full bg-brand flex items-center justify-center text-dark">
+          <i class="fa-solid fa-car"></i>
+        </span>
+        <span class="text-white font-bold text-xl">bruz.</span>
+      </a>
+
+      <!-- Menu (desktop) -->
+      <nav class="hidden md:flex gap-8 text-white font-semibold">
+        <a href="index.html" class="hover:text-brand">Home</a>
+        <a href="offering.html" class="hover:text-brand">Our Offering</a>
+        <a href="about.html" class="hover:text-brand">About Us</a>
+      </nav>
+
+      <a href="contact.html" class="btn hidden md:inline-block">Contact Us</a>
+
+      <!-- Hamburger button (mobile) -->
+      <!-- Mobile menu: <details> opens/closes by itself, no JavaScript -->
+      <details class="md:hidden">
+        <summary class="text-white text-2xl" aria-label="Open menu"><i class="fa-solid fa-bars"></i></summary>
+        <div class="absolute left-0 right-0 top-full bg-dark text-white font-semibold px-4 pb-4 flex flex-col gap-3">
+          <a href="index.html">Home</a>
+          <a href="offering.html">Our Offering</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html" class="btn text-center">Contact Us</a>
+        </div>
+      </details>
+    </div>
+
+    <!-- Menu (mobile) -->
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="relative h-[70vh] min-h-[420px] flex items-center justify-center text-center">
+      <!-- 🖼️ REPLACE IMAGE: hero background (blue car on a road) -->
+      <img src="https://picsum.photos/seed/bruz-hero/1600/900" alt="Car on the road"
+           class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <div class="relative px-4 max-w-4xl">
+        <h1 class="text-white text-3xl md:text-5xl font-bold leading-tight">
+          Safe, Reliable, and Ethical Transportation at Your Fingertips.
+        </h1>
+        <a href="contact.html" class="btn mt-8">Register Your Interest</a>
+      </div>
+    </section>
+
+    <!-- ================= OUR OFFERING ================= -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Our Offering</h2>
+
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Card 1 -->
+        <a href="offering.html" class="relative h-64 rounded-lg overflow-hidden flex items-center justify-center text-center">
+          <!-- 🖼️ REPLACE IMAGE: Book a Ride -->
+          <img src="https://picsum.photos/seed/bruz-ride/600/500" alt="Book a ride"
+               class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/50"></div>
+          <div class="relative text-white px-4">
+            <h3 class="text-2xl font-bold">Book A Ride</h3>
+            <p class="text-sm mt-1">Safe and trusted transportation, anytime, anywhere.</p>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="offering.html" class="relative h-64 rounded-lg overflow-hidden flex items-center justify-center text-center">
+          <!-- 🖼️ REPLACE IMAGE: Book a Delivery -->
+          <img src="https://picsum.photos/seed/bruz-delivery/600/500" alt="Book a delivery"
+               class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/50"></div>
+          <div class="relative text-white px-4">
+            <h3 class="text-2xl font-bold">Book A Delivery</h3>
+            <p class="text-sm mt-1">Reliable delivery solutions for groceries, parcels, and corporate needs.</p>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="offering.html" class="relative h-64 rounded-lg overflow-hidden flex items-center justify-center text-center sm:col-span-2 lg:col-span-1">
+          <!-- 🖼️ REPLACE IMAGE: Hire a Car -->
+          <img src="https://picsum.photos/seed/bruz-hire/600/500" alt="Hire a car"
+               class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/50"></div>
+          <div class="relative text-white px-4">
+            <h3 class="text-2xl font-bold">Hire a Car</h3>
+            <p class="text-sm mt-1">Flexible car hire options for long-term and short-term use.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT US ================= -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">About Us</h2>
+
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- 🖼️ REPLACE IMAGE: yellow taxis in the city -->
+        <img src="https://picsum.photos/seed/bruz-about/800/700" alt="Taxis in the city"
+             class="w-full h-72 md:h-96 object-cover rounded-lg">
+
+        <div>
+          <h3 class="text-xl font-bold mb-3">Our Guiding Principles</h3>
+          <p class="mb-3 text-sm leading-relaxed">
+            We are a company founded on the principles of ethics, trust, and family values, striving to make
+            transportation not just a service, but a positive experience for everyone. Inspired by a family legacy
+            that has always championed care, integrity, and community support, we aim to bring these values to
+            modern transportation.
+          </p>
+          <p class="text-sm leading-relaxed">
+            Our mission is simple yet profound: to provide safe, reliable, and ethical transportation services that
+            you can depend on every day. Safety is at the heart of everything we do. That's why we go the extra mile
+            to rigorously vet our drivers through comprehensive background checks, professional training, and
+            continuous evaluations. When you choose us, you can travel with confidence, knowing that your well-being
+            is our top priority.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OUR TEAM ================= -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Our Team</h2>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+
+        <div class="rounded-lg overflow-hidden shadow">
+          <!-- 🖼️ REPLACE IMAGE: Alex Gibson -->
+          <img src="https://picsum.photos/seed/bruz-team1/400/500" alt="Alex Gibson" class="w-full h-56 md:h-72 object-cover">
+          <div class="p-3">
+            <h3 class="font-semibold">Alex Gibson</h3>
+            <p class="text-sm">Founder</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden shadow">
+          <!-- 🖼️ REPLACE IMAGE: Sarah Johnson -->
+          <img src="https://picsum.photos/seed/bruz-team2/400/500" alt="Sarah Johnson" class="w-full h-56 md:h-72 object-cover">
+          <div class="p-3">
+            <h3 class="font-semibold">Sarah Johnson</h3>
+            <p class="text-sm">Designer</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden shadow">
+          <!-- 🖼️ REPLACE IMAGE: Mark Davis -->
+          <img src="https://picsum.photos/seed/bruz-team3/400/500" alt="Mark Davis" class="w-full h-56 md:h-72 object-cover">
+          <div class="p-3">
+            <h3 class="font-semibold">Mark Davis</h3>
+            <p class="text-sm">Developer</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden shadow">
+          <!-- 🖼️ REPLACE IMAGE: Emily Thompson -->
+          <img src="https://picsum.photos/seed/bruz-team4/400/500" alt="Emily Thompson" class="w-full h-56 md:h-72 object-cover">
+          <div class="p-3">
+            <h3 class="font-semibold">Emily Thompson</h3>
+            <p class="text-sm">Product Manager</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIAL ================= -->
+    <section class="py-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 px-4">What Our Customers Say About Us</h2>
+
+      <div class="bg-amber-50 py-12 px-4 text-center">
+        <p class="max-w-xl mx-auto text-lg md:text-xl font-semibold">
+          Love the simplicity of the service and the prompt customer support. We can't imagine working without it.
+        </p>
+
+        <!-- 🖼️ REPLACE IMAGE: customer photo -->
+        <img src="https://picsum.photos/seed/bruz-kelly/100/100" alt="Kelly Williams"
+             class="w-12 h-12 rounded-full object-cover mx-auto mt-6">
+        <p class="font-semibold mt-2">Kelly Williams</p>
+        <p class="text-xs">Head of Design, Layers</p>
+
+        <div class="text-brand text-sm mt-2">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+
+        <!-- Dots (design only) -->
+        <div class="flex justify-center gap-2 mt-4">
+          <span class="w-2 h-2 rounded-full bg-brand"></span>
+          <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+          <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Left: title -->
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold">Frequently asked questions</h2>
+          <p class="text-sm mt-3 text-gray-600">
+            Everything you need to know about the product and billing. Can't find the answer you're looking for?
+            Please chat to our friendly team.
+          </p>
+        </div>
+
+        <!-- Right: questions (<details> opens/closes without any JavaScript) -->
+        <div class="flex flex-col gap-2">
+
+          <details open class="bg-gray-50 rounded-lg p-4">
+            <summary class="flex items-center gap-3 font-semibold text-sm">
+              <i class="faq-icon fa-solid fa-plus text-brand"></i> Is there a free trial available?
+            </summary>
+            <p class="text-sm text-gray-600 mt-2 pl-7">
+              Yes, you can try us for free for 30 days. If you want, we'll provide you with a free, personalized
+              30-minute onboarding call to get you up and running as soon as possible.
+            </p>
+          </details>
+
+          <details class="rounded-lg p-4">
+            <summary class="flex items-center gap-3 font-semibold text-sm">
+              <i class="faq-icon fa-solid fa-plus text-brand"></i> Can I change my plan later?
+            </summary>
+            <p class="text-sm text-gray-600 mt-2 pl-7">Yes, you can upgrade or downgrade your plan at any time.</p>
+          </details>
+
+          <details class="rounded-lg p-4">
+            <summary class="flex items-center gap-3 font-semibold text-sm">
+              <i class="faq-icon fa-solid fa-plus text-brand"></i> What is your cancellation policy?
+            </summary>
+            <p class="text-sm text-gray-600 mt-2 pl-7">You can cancel anytime. Your plan stays active until the end of the billing period.</p>
+          </details>
+
+          <details class="rounded-lg p-4">
+            <summary class="flex items-center gap-3 font-semibold text-sm">
+              <i class="faq-icon fa-solid fa-plus text-brand"></i> Can other info be added to an invoice?
+            </summary>
+            <p class="text-sm text-gray-600 mt-2 pl-7">Yes, you can add your company name, address and tax details to every invoice.</p>
+          </details>
+
+          <details class="rounded-lg p-4">
+            <summary class="flex items-center gap-3 font-semibold text-sm">
+              <i class="faq-icon fa-solid fa-plus text-brand"></i> How does billing work?
+            </summary>
+            <p class="text-sm text-gray-600 mt-2 pl-7">Billing is monthly. You will get an invoice by email after each payment.</p>
+          </details>
+
+          <details class="rounded-lg p-4">
+            <summary class="flex items-center gap-3 font-semibold text-sm">
+              <i class="faq-icon fa-solid fa-plus text-brand"></i> How do I change my account email?
+            </summary>
+            <p class="text-sm text-gray-600 mt-2 pl-7">Go to account settings, choose "Email" and enter your new address.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= APP DOWNLOAD (CTA) ================= -->
+    <section class="bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center">
+
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold">Safe and Reliable Transportation Made Simple</h2>
+          <p class="text-sm mt-3 text-gray-600">
+            Join Bruz Cars today and experience convenience like never before. Your trusted partner for rides,
+            deliveries, and car hire.
+          </p>
+
+          <div class="flex gap-3 mt-6">
+            <a href="#" class="bg-dark text-white text-xs rounded-md px-3 py-2 flex items-center gap-2">
+              <i class="fa-brands fa-apple text-xl"></i> App Store
+            </a>
+            <a href="#" class="bg-dark text-white text-xs rounded-md px-3 py-2 flex items-center gap-2">
+              <i class="fa-brands fa-google-play text-lg"></i> Google Play
+            </a>
+          </div>
+        </div>
+
+        <!-- 🖼️ REPLACE IMAGE: phone with the bruz logo -->
+        <img src="https://picsum.photos/seed/bruz-phone/400/500" alt="Bruz app on a phone"
+             class="w-56 md:w-64 mx-auto rounded-3xl">
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-dark text-white">
+    <div class="max-w-6xl mx-auto px-4 py-10 text-center">
+
+      <!-- 🖼️ REPLACE LOGO -->
+      <span class="w-14 h-14 rounded-full bg-brand flex items-center justify-center text-dark text-2xl mx-auto">
+        <i class="fa-solid fa-car"></i>
+      </span>
+
+      <ul class="flex flex-wrap justify-center gap-x-5 gap-y-2 mt-6 font-semibold text-sm">
+        <li><a href="#">Link One</a></li>
+        <li><a href="#">Link Two</a></li>
+        <li><a href="#">Link Three</a></li>
+        <li><a href="#">Link Four</a></li>
+        <li><a href="#">Link Five</a></li>
+      </ul>
+
+      <hr class="border-gray-600 my-6">
+
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+        <p>© 2024 Bruz. All rights reserved</p>
+        <ul class="flex gap-4 text-xs underline">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookies Settings</a></li>
+        </ul>
+        <div class="flex gap-4 text-lg">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
