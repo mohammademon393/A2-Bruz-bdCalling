@@ -1,7 +1,5 @@
 /* =========================================================
    Bruz Cars - custom CSS
-   Almost everything is Tailwind. Only a few small things
-   live here so the HTML stays clean.
    ========================================================= */
 
 /* ---------- Font ---------- */
@@ -12,7 +10,7 @@ body {
 /* ---------- Yellow button used everywhere (Contact Us, Submit...) ---------- */
 .btn {
   display: inline-block;
-  background-color: #ffab1a;
+  background-color: #FFB121;
   color: #121212;
   font-weight: 600;
   padding: 0.6rem 1.25rem;
@@ -23,8 +21,7 @@ body {
   opacity: 0.85;
 }
 
-/* ---------- <details> tag (used for FAQ and the mobile menu) ----------
-   Hide the default arrow. FAQ + icon rotates when the item is open. */
+/* ---------- <details> tag (used for FAQ and the mobile menu) ---------- */
 details > summary {
   list-style: none;
   cursor: pointer;

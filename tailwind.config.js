@@ -1,10 +1,9 @@
-// Tailwind config (root file). Brand colors and font live here, one place only.
-// Use in HTML like: bg-brand, text-brand, bg-dark, text-dark
+// Tailwind config (root file). 
 tailwind.config = {
   theme: {
     extend: {
       colors: {
-        brand: '#FFAB1A', // yellow
+        brand: '#FFB121',  // yellow
         dark: '#121212',  // almost black
       },
       fontFamily: {

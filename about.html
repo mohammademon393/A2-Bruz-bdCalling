@@ -5,11 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bruz Cars | About Us</title>
 
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/logo/logo.webp" type="image/x-icon">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="tailwind.config.js"></script>
+
+  <!-- custom styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,11 +27,10 @@
   <header class="bg-dark sticky top-0 z-50">
     <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
       <a href="index.html" class="flex items-center gap-2">
-        <!-- 🖼️ REPLACE LOGO -->
+        <!--  LOGO -->
         <span class="w-10 h-10 rounded-full bg-brand flex items-center justify-center text-dark">
-          <i class="fa-solid fa-car"></i>
+          <img src="./images/logo/logo.webp" alt="Bruz Cars Logo" class="w-10 h-10">
         </span>
-        <span class="text-white font-bold text-xl">bruz.</span>
       </a>
 
       <nav class="hidden md:flex gap-8 text-white font-semibold">
@@ -34,7 +41,7 @@
 
       <a href="contact.html" class="btn hidden md:inline-block">Contact Us</a>
 
-      <!-- Mobile menu: <details> opens/closes by itself, no JavaScript -->
+      <!-- Mobile menu: details opens/closes  -->
       <details class="md:hidden">
         <summary class="text-white text-2xl" aria-label="Open menu"><i class="fa-solid fa-bars"></i></summary>
         <div class="absolute left-0 right-0 top-full bg-dark text-white font-semibold px-4 pb-4 flex flex-col gap-3">
@@ -52,8 +59,8 @@
 
     <!-- ================= PAGE BANNER ================= -->
     <section class="relative h-48 md:h-64 flex items-end">
-      <!-- 🖼️ REPLACE IMAGE: banner (night city taxi) -->
-      <img src="https://picsum.photos/seed/bruz-about-banner/1600/500" alt="About us banner"
+      <!--  banner night city taxi -->
+      <img src="./images/aboutUs/aboutUsBanner.png" alt="About us banner"
            class="absolute inset-0 w-full h-full object-cover">
       <div class="absolute inset-0 bg-black/30"></div>
       <h1 class="relative text-white text-2xl md:text-3xl font-bold px-4 pb-4 max-w-6xl mx-auto w-full">About Us</h1>
@@ -63,11 +70,11 @@
     <section class="max-w-6xl mx-auto px-4 py-12">
       <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Our Team</h2>
 
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
         <div class="rounded-lg overflow-hidden shadow">
-          <!-- 🖼️ REPLACE IMAGE: Alex Gibson -->
-          <img src="https://picsum.photos/seed/bruz-team1/400/500" alt="Alex Gibson" class="w-full h-56 md:h-72 object-cover">
+          <!--  Alex Gibson -->
+          <img src="./images/team1.webp" alt="Alex Gibson" class="w-full h-56 md:h-72 object-cover">
           <div class="p-3">
             <h3 class="font-semibold">Alex Gibson</h3>
             <p class="text-sm">Founder</p>
@@ -75,8 +82,8 @@
         </div>
 
         <div class="rounded-lg overflow-hidden shadow">
-          <!-- 🖼️ REPLACE IMAGE: Sarah Johnson -->
-          <img src="https://picsum.photos/seed/bruz-team2/400/500" alt="Sarah Johnson" class="w-full h-56 md:h-72 object-cover">
+          <!--  Sarah Johnson -->
+          <img src="./images/team2.webp" alt="Sarah Johnson" class="w-full h-56 md:h-72 object-cover">
           <div class="p-3">
             <h3 class="font-semibold">Sarah Johnson</h3>
             <p class="text-sm">Designer</p>
@@ -84,8 +91,8 @@
         </div>
 
         <div class="rounded-lg overflow-hidden shadow">
-          <!-- 🖼️ REPLACE IMAGE: Mark Davis -->
-          <img src="https://picsum.photos/seed/bruz-team3/400/500" alt="Mark Davis" class="w-full h-56 md:h-72 object-cover">
+          <!-- Mark Davis -->
+          <img src="./images/team3.webp" alt="Mark Davis" class="w-full h-56 md:h-72 object-cover">
           <div class="p-3">
             <h3 class="font-semibold">Mark Davis</h3>
             <p class="text-sm">Developer</p>
@@ -93,8 +100,8 @@
         </div>
 
         <div class="rounded-lg overflow-hidden shadow">
-          <!-- 🖼️ REPLACE IMAGE: Emily Thompson -->
-          <img src="https://picsum.photos/seed/bruz-team4/400/500" alt="Emily Thompson" class="w-full h-56 md:h-72 object-cover">
+          <!--  Emily Thompson -->
+          <img src="./images/team4.webp" alt="Emily Thompson" class="w-full h-56 md:h-72 object-cover">
           <div class="p-3">
             <h3 class="font-semibold">Emily Thompson</h3>
             <p class="text-sm">Product Manager</p>
@@ -107,8 +114,8 @@
     <!-- ================= OUR VISION (image left) ================= -->
     <section class="max-w-6xl mx-auto px-4 py-12">
       <div class="grid md:grid-cols-2 gap-8 items-center">
-        <!-- 🖼️ REPLACE IMAGE: yellow taxi by the sea -->
-        <img src="https://picsum.photos/seed/bruz-vision/800/600" alt="Our vision"
+        <!--  your vision img -->
+        <img src="./images/aboutUs/aboutUs1.webp" alt="Our vision"
              class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
 
         <div>
@@ -135,8 +142,8 @@
           </p>
         </div>
 
-        <!-- 🖼️ REPLACE IMAGE: yellow taxis in traffic -->
-        <img src="https://picsum.photos/seed/bruz-commitment/800/600" alt="Our commitment"
+        <!--  yellow taxis in traffic -->
+        <img src="./images/aboutUs/aboutUs2.webp" alt="Our commitment"
              class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg order-1 md:order-2">
       </div>
     </section>
@@ -144,8 +151,8 @@
     <!-- ================= OUR IMPACT (image left) ================= -->
     <section class="max-w-6xl mx-auto px-4 py-12">
       <div class="grid md:grid-cols-2 gap-8 items-center">
-        <!-- 🖼️ REPLACE IMAGE: taxi in Times Square -->
-        <img src="https://picsum.photos/seed/bruz-impact/800/600" alt="Our impact"
+        <!--  taxi in Times Square -->
+        <img src="./images/aboutUs/aboutUs3.webp" alt="Our impact"
              class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
 
         <div>
@@ -164,9 +171,9 @@
   <!-- ================= FOOTER ================= -->
   <footer class="bg-dark text-white">
     <div class="max-w-6xl mx-auto px-4 py-10 text-center">
-      <!-- 🖼️ REPLACE LOGO -->
+      <!-- LOGO -->
       <span class="w-14 h-14 rounded-full bg-brand flex items-center justify-center text-dark text-2xl mx-auto">
-        <i class="fa-solid fa-car"></i>
+        <img src="./images/logo/logo.webp" alt="Bruz Cars Logo" class="w-10 h-10">
       </span>
 
       <ul class="flex flex-wrap justify-center gap-x-5 gap-y-2 mt-6 font-semibold text-sm">
